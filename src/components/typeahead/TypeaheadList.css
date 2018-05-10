@@ -1,0 +1,5 @@
+.typeahead-list {
+  background-color: white;
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10; }
