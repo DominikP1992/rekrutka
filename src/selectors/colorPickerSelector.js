@@ -1,7 +1,7 @@
 import { createSelector } from 'reselect';
 // simple selector
 
-export const getFilteredColors = createSelector(
+export const colorsSelector = createSelector(
   state => state.colorPicker.colors,
-  (data) => { console.log(data); return []; },
+  colors => colors,
 );

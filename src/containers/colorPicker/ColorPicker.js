@@ -10,6 +10,9 @@ import Button from '../../components/generic/Btn';
 // redux actions
 import * as colorPickerActions from '../../redux/actions/colorPickerActions';
 
+// selectors
+import { colorsSelector } from '../../selectors/colorPickerSelector';
+
 class ColorPicker extends Component {
   constructor(props) {
     super(props);
@@ -66,7 +69,7 @@ ColorPicker.propTypes = {
 // connect with state, by using selectors
 
 const mapStateToProps = state => ({
-  colors: state.colorPicker.colors,
+  colors: colorsSelector(state),
   selectedColor: state.colorPicker.selectedColor,
 });
 
